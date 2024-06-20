@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <main>
+        
+        <div id="form-con">
+            <form action="#">
+                <label for="">Name</label> <br>
+                <input type="text" id="name"> <br><br>
+
+                <label for="">Age</label> <br>
+                <input type="number" id="age"> <br><br>
+
+                <label for="">Gender</label> <br>
+                <select name="" id="">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select> <br><br>
+
+                <button id="login">Log In</button>
+            </form>
+        </div>
+
+        <div id="q1">
+            <p>1. Who is the current president of Nigeria ?</p>
+            <input type="text" id="q1ans" disabled> <br><br>
+
+            <li onclick="q1a()">a. Murtala Muhammad</li>
+            <li onclick="q1b()">b. Olusegun Obasanjo</li>
+            <li onclick="q1c()">c. Bola Ahmed Tinubu</li>
+            <li onclick="q1d()">d. Peter Obi</li>
+            
+            <button onclick="next1()">Next</button>
+        </div>
+
+        <div id="q2">
+            <p>2. Which of these is NOT a programming language ?</p>
+            <input type="text" id="q2ans" disabled> <br><br>
+
+            <li onclick="q2a()">a. Javascript</li>
+            <li onclick="q2b()">b. CSS</li>
+            <li onclick="q2c()">c. PHP</li>
+            <li onclick="q2d()">d. Java</li>
+            
+            <button onclick="next2()">Next</button>
+            <button onclick="prev2()">Previous</button>
+        </div>
+
+        <div id="q3">
+            <p>3. What color combination gives you "Orange" color?</p>
+            <input type="text" id="q3ans" disabled> <br><br>
+
+            <li onclick="q3a()">a. Red and Green</li>
+            <li onclick="q3b()">b. Yellow and Purple</li>
+            <li onclick="q3c()">c. Gold and Red</li>
+            <li onclick="q3d()">d. Yellow and Red</li>
+            
+            <button onclick="next3()">Next</button>
+            <button onclick="prev3()">Previous</button>
+        </div>
+
+        <div id="q4">
+            <p>4. A man is twice the age of his son. If the man's age is currently 30, how old will he be when his son turns 18?</p>
+            <input type="text" id="q4ans" disabled> <br><br>
+
+            <li onclick="q4a()">a. 57</li>
+            <li onclick="q4b()">b. 60</li>
+            <li onclick="q4c()">c. 33</li>
+            <li onclick="q4d()">d. 48</li>
+            
+            <button onclick="next4()">Next</button>
+            <button onclick="prev4()">Previous</button>
+        </div>
+
+        <div id="q5">
+            <p>5. In Web Development, what does the term 'CSS' stand for?</p>
+            <input type="text" id="q5ans" disabled> <br><br>
+
+            <li onclick="q5a()">a. Casscade Style Sheet</li>
+            <li onclick="q5b()">b. Casacading Style Sheet</li>
+            <li onclick="q5c()">c. Cascade Styling Sheet</li>
+            <li onclick="q5d()">d. Cascading Style Sheet</li>
+            
+            <button onclick="prev5()">Previous</button>
+            <button id="submit">Submit</button>
+        </div>
+
+        <h2 id="result"></h2>
+    </main>
+    
+
+    <script src="./quiz.js"></script>
+</body>
+</html>
